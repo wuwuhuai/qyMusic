@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QYmusic.iml" filepath="$PROJECT_DIR$/QYmusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qyMusic/qyMusic.iml" filepath="$PROJECT_DIR$/qyMusic/qyMusic.iml" />
+    </modules>
+  </component>
+</project>

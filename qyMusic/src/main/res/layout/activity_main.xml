@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/second"
+    >
+
+    <!--imgeView位置-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/singer_2"
+        android:id="@+id/Image"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:id="@+id/layout_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal">
+
+        <!--显示当前进度-->
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <SeekBar
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/time_current"
+            />
+
+        <!--显示总进度-->
+        <TextView
+            android:id="@+id/time_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/seekBar"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_btnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnBackground"
+            android:text="播放"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_margin="20px"
+
+            />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnBackground"
+            android:text="暂停"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_margin="20px"
+            />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnBackground"
+            android:text="退出"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_margin="20px"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
